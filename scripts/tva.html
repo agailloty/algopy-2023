@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+let TN = 0.2;
+let TI = 0.1;
+let TR = 0.055;
+let TP = 0.021;
+alert("Bonjour, bienvenue dans ce programme");
+alert("Voici les taux de TVA en vigueur en France : " + "\n" +
+	"Taux normal : " + TN + "\n" + "Taux intermédiaire : " + TI + "\n" +
+	"Taux réduit : " + TR + "\n" + "Taux particulier : " + TP)
+
+
+let TAUX_CHOISI;
+TAUX_CHOISI = prompt("Veuillez taper TN pour le taux normal, TI pour le taux intermédiaire, TR pour le taux réduit et TP pour le taux particulier");
+if (TAUX_CHOISI != "TN" && TAUX_CHOISI != "TI" && TAUX_CHOISI != "TR" && TAUX_CHOISI != "TP") {
+alert("Veuiller saisir une valeur dans la liste suivante : TN, TI, TR, TP");
+throw new Error();
+}
+
+MONTANT = prompt("Entrer le montant");
+// Convertir le montant en numérique
+MONTANT = parseFloat(MONTANT);
+
+
+if (TAUX_CHOISI == "TN") {
+	RESULTAT = MONTANT * TN;
+}
+else if (TAUX_CHOISI == "TI") {
+	RESULTAT = MONTANT * TI;
+} else if (TAUX_CHOISI == "TR") {
+	RESULTAT = MONTANT * TR;
+} else if (TAUX_CHOISI == "TP") {
+	RESULTAT = MONTANT * TP;
+}
+alert("La TVA pour le montant saisi est de " + RESULTAT + " EUR")
+   </script>
+
+</head>
+<body>
+
+</body>
+</html>
