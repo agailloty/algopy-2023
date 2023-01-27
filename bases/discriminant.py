@@ -2,9 +2,16 @@
 # Demander à l'utilisateur d'entrer la valeur de b
 # Demander à l'utilisateur d'entrer la valeur de c
 
+
 a = float(input("Entrer la valeur de a: "))
-print(f"Vous avez entré {a}")
-print(type(a))
+b = float(input("Entrer la valeur de b: "))
+c = float(input("Entrer la valeur de c: "))
+
+delta = b**2 - 4*(a*c)
+
+
+print(f"La valeur de delta est : {delta}")
+
 
 
 
