@@ -10,3 +10,19 @@ while reponse != "bonjour":
 
 print("Bah voilà ! C'était pas la mer à boire de dire bonjour !")
 print(f"Il t 'a quand même fallu {nb_times} de tentatives pour me dire bonjour. Huum ")
+
+# On peut quitter de manière prématurée la boucle si on estime qu'il ne vaut pas la peine de 
+# continuer à exécuter le même code.
+
+nb_times = 0
+reponse = ""
+while reponse != "bonjour":
+    reponse = input("Un peu de politesse cher ami. ")
+    nb_times = nb_times + 1
+    if nb_times == 5:
+        print("Franchement t'es un cas perdu")
+        break
+
+if nb_times > 0:
+    print("Bah voilà ! C'était pas la mer à boire de dire bonjour !")
+print(f"Il t 'a quand même fallu {nb_times} de tentatives pour me dire bonjour. Huum ")
