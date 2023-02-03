@@ -54,3 +54,21 @@ print("L'expression False or True s'évalue à : ", False or True)
 
 # Un autre cas d'usage c'est d'exécuter d'autre bloc de code si une ou plusieurs conditions
 # ne sont pas satisfaites
+
+# Il est possible de demander à Python de vérifier plusieurs conditions les une à la suite des autres
+# en utilisant les instructions if, elif, else
+
+# Dès que la première condition évaluée à True est trouvée, Python sort du bloc
+
+age = 18
+inscritIDEE = True
+if age >= 18 and inscritIDEE:
+    print("Cette ligne s'exécute parce que l'age est bien supérieur ou égal à 18 et inscrit en IDEE")
+elif age <= 18 and inscritIDEE:
+    ("Cette ligne s'exécute parce que l'age est inférieur ou égal à 18 et et inscrit en IDEE")
+elif age <= 18 and inscritIDEE:
+    ("Cette ligne s'exécute parce que l'age est inférieur ou égal à 18 et et inscrit en IDEE")
+else:
+    print("Ce code est exécuté parce que toutes les conditions précédentes ont échoué.")
+
+print("Le code qui s'exécute quand Python sort du bloc if")
