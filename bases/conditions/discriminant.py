@@ -24,26 +24,19 @@ if delta > 0:
     racine_delta = delta ** 0.5
     x1 = (-b - racine_delta) / 2 * a
     x2 = (-b + racine_delta) / 2 * a
-    print("L'équation admet deux solutions x1 = {x1} et x2 = {x2} ")
+    print(f"L'équation admet deux solutions x1 = {x1} et x2 = {x2} ")
     print(f"L'équation initiale {a}x**2 {+1 *b} x {+1 *c} peut être factorisé comme suit:")
     print(f"{a} (x-{x1})(x+{x2}")
+elif delta == 0:
+    # Calculer x = -b / 2*a
+    print("Delta est égal à 0")
+    x = -b / 2*a
+    print(f"L'équation n'admet qu'une seule solution x1=x2 = {x}")
+    print(f"L'équation initiale {a}x**2 {+1 *b} x {+1 *c} peut être factorisé comme suit:")
+    print(f"{a} (x{x})**2")
 else:
     print("Delta est négatif")
-
-
-
-
-# Calculer delta = b** - 4*(a*c)
-
-# Si delta > 0 : 
-# calculer x1 = (-b - sqrt(delta) ) / 2 * a
-# calculer x2 = (-b + sqrt(delta) ) / 2 * a
-
-# Si delta == 0
-# Calculer x = -b / 2*a
-
-# Si delta < 0
-# Pas de solution
+    print("L'équation n'admet aucune solution dans |R")
 
 
 
