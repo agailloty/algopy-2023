@@ -72,3 +72,5 @@ else:
     print("Ce code est exécuté parce que toutes les conditions précédentes ont échoué.")
 
 print("Le code qui s'exécute quand Python sort du bloc if")
+
+# L'opérateur % s'appelle le modulo

@@ -17,3 +17,19 @@ for i in seq:
     # La variable d'itération
     print(f"La valeur actuelle est {i}")
     print(f"Le carré de {i} est égal à {i**2} ")
+
+nb_times = range(20)
+print(type(nb_times))
+for i in nb_times:
+    print(i)
+
+
+# Le bloc de code qui va êtr exécuté plusieurs fois peut être n'importe quelle opération valide
+
+for i in range(20):
+    if i % 2 == 0:
+        print("Le nombre est pair")
+    else:
+        print("Le nombre est impair")
+
+# C'est la boucle for
