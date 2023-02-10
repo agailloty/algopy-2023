@@ -12,3 +12,7 @@ def save_html(url, filename):
     chrome.get(url)
     with open(filename, "w", encoding="utf-8") as f:
         f.write(chrome.page_source)
+
+def get_html_page(url):
+    chrome.get(url)
+    return chrome.page_source
