@@ -10,4 +10,14 @@ from selenium import webdriver
 
 chrome = webdriver.Chrome()
 lien = "https://fr.indeed.com/jobs?q=data+analyst&l=France&from=searchOnHP&vjk=f400f062f379bb7b"
+
 chrome.get(lien)
+
+with open("test.html", "w", encoding="utf-8") as f:
+    f.write(chrome.page_source)
+
+# On peut soit extraire les informations de la page Indeed en gardant la page HTML en mémoire
+# en utilisant la propriété chrome.page_source. Soit en enregistre la page sur le disque
+# et accéder à elle plus tard
+
+
